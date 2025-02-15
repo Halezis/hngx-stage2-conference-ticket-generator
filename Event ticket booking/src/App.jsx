@@ -8,6 +8,11 @@ export default function App() {
   const [currentStep, setCurrentStep] = useState('tickets')
   const [ticketData, setTicketData] = useState(null)
 
+  const handleNext = (info) => {
+    setTicketData(info)
+    setCurrentStep('form')
+  }
+
   // Handle "Book Another Ticket" button click
   const handleBookAnother = () => {
     setCurrentStep('tickets')
@@ -20,7 +25,6 @@ export default function App() {
 
   return (
     <div className="bg-mainbg flex flex-col min-h-screen">
-      {/* display header at all times */}
       <Header />
 
       <main className="flex justify-center items-center">
