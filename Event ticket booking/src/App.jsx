@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Header from './Components/header'
+import Header from './Components/Header'
 import Tickets from './Components/Tickets'
 import Form from './Components/Form'
 import TicketDisplay from './Components/TicketDisplay'
