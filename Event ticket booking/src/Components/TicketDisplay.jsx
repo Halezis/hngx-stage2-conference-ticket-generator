@@ -25,7 +25,7 @@ export default function TicketDisplay({ ticket, onBookAnother, onDownload }) {
       </div>
 
       <div
-        className="flex justify-center w-full h-screen bg-contain bg-center bg-no-repeat"
+        className="relative flex justify-center w-full h-screen bg-contain bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className="flex flex-col mt-[1.25rem] w-[16.25rem] h-[27.875rem] p-[0.875rem] items-center flex-shrink-0 rounded-xl border border-[#24A0B5] bg-[rgba(3,30,33,0.10)] backdrop-blur-[2px] text-[#FAFAFA] text-center">
@@ -45,7 +45,7 @@ export default function TicketDisplay({ ticket, onBookAnother, onDownload }) {
             <div className="flex justify-start items-start">
               <div className="">
                 <label className="text-white font-roboto text-[0.625rem] font-normal leading-[150%] opacity-[0.33]">
-                  Enter your name
+                  Your name
                 </label>
                 <p className="text-white font-roboto text-[0.75rem] font-bold leading-[150%]">
                   {ticket.fullName}
@@ -54,7 +54,7 @@ export default function TicketDisplay({ ticket, onBookAnother, onDownload }) {
 
               <div className="">
                 <label className="text-white font-roboto text-[0.625rem] font-normal leading-[150%] opacity-[0.33]">
-                  Enter your email*
+                  Your email*
                 </label>
                 <p className="text-white font-roboto text-[0.75rem] font-bold leading-[150%]">
                   {ticket.email}
@@ -88,16 +88,16 @@ export default function TicketDisplay({ ticket, onBookAnother, onDownload }) {
       <div className="">
 
         {/* buttons */}
-        <div className="flex flex-col md:flex-row gap-4 justify-center">
+        <div className="mx-auto w-full flex flex-col-reverse md:flex-row justify-center items-center md:items-start gap-[0.5rem] md:gap-[2rem] mt-[1.25rem]">
           <button
             onClick={onBookAnother}
-            className=""
+            className="w-full px-[1.5rem] py-[0.75rem] bg-[#08252B] border border-[#24A0B5] rounded-[0.5rem] md:rounded-[0.75rem] text-[#0E464F] hover:bg-[#0E464F] hover:text-[#FFFFFF] hover:border-[#08252B] transition-all duration-200"
           >
             Book Another Ticket
           </button>
           <button
             onClick={onDownload}
-            className=""
+            className="w-full px-[1.5rem] py-[0.75rem] bg-[#24A0B5] border-0 rounded-[0.5rem] md:rounded-[0.75rem] text-[#FFFFFF] hover:bg-[#1C7F8F] hover:shadow-lg transition-all duration-200"
           >
             Download Ticket
           </button>
