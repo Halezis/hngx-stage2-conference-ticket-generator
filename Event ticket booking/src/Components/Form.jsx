@@ -228,7 +228,7 @@ export default function Form({ ticketInfo, onBack, onSubmitSuccess }) {
             disabled={uploading}
             className="w-full px-[1.5rem] py-[0.75rem] bg-[#24A0B5] border-0 rounded-[0.5rem] md:rounded-[0.75rem] text-[#FFFFFF] hover:bg-[#1C7F8F] hover:shadow-lg transition-all duration-200"
           >
-            {uploading ? 'Uploading...' : 'Get My Regular Ticket'}
+            {uploading ? 'Uploading...' : 'Get My Ticket'}
           </button>
         </div>
       </div>
